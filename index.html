@@ -8,8 +8,41 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/styles.css">
   </head>
-  <body class="bg-teal-100">
-    <h1 class="text-center mt-3 text-4xl font-spaceMono">SPLITTER</h1>
-    
+  <body class="bg-teal-100 font-spaceMono">
+    <h1 class="text-center mt-5 text-4xl tracking-wider">SPLITTER</h1>
+    <section class="bg-white p-4 mt-6">
+        <div>
+            <p>Bill</p>
+            <input type="text" class="text-base w-full p-2 outline-none bg-grayishCyan">
+            <p class="">Select tip %</p>
+            <div class="grid-discount ">
+                <p class="price--one bg-darkGreen text-white p-2 font-bold">5 %</p>
+                <p class="price--two bg-darkGreen text-white p-2 font-bold">10 %</p>
+                <p class="price--three bg-darkGreen text-white p-2 font-bold">15 %</p>
+                <p class="price--four bg-darkGreen text-white p-2 font-bold">25 %</p>
+                <p class="price--five bg-darkGreen text-white p-2 font-bold">50 %</p>
+                <p class="custom bg-grayishCyan text-darkCyan p-2 font-bold">Custom</p>
+            </div>
+        </div>
+        <div>
+            <p>Number of people</p>
+            <input type="text" class="text-base w-full p-2 outline-none bg-grayishCyan">
+        </div>
+        <div class="bg-darkGreen pt-8 pb-6 px-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-rows-2 ">
+                    <p class="text-white">Tip Amount</p>
+                    <p class="text-cyanGray">/ person</p>
+                </div>
+                <p class="mt-5 justify-self-center text-strongCyan text-4xl">$4.27</p>
+                <div class="grid grid-rows-2">
+                    <p class="text-white">Total</p>
+                    <p class="text-cyanGray">/ person</p>
+                </div>
+                <p class="mt-5 justify-self-center text-strongCyan text-4xl">$32.79</p>
+            </div>
+            <button class="text-center w-full mt-4 bg-strongCyan p-2 rounded-lg">RESET</button>
+        </div>
+    </section>
   </body>
 </html>
