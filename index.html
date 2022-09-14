@@ -14,20 +14,20 @@
         <div>
             <div class="mb-8">
                 <p class="text-darkGreen mb-2">Bill</p>
-                <input type="text" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-6 text-right font-bold text-10xl bg-[url('../images/icon-dollar.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700">
+                <input type="text" id="price" value="0" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-6 text-right font-bold text-10xl bg-[url('../images/icon-dollar.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700">
                 <p class="text-darkGreen mb-2">Select tip %</p>
                 <div class="grid-discount ">
-                    <p class="price--one bg-darkGreen text-white p-2 font-bold rounded-xl">5 %</p>
-                    <p class="price--two bg-darkGreen text-white p-2 font-bold rounded-xl">10 %</p>
-                    <p class="price--three bg-darkGreen text-white p-2 font-bold rounded-xl">15 %</p>
-                    <p class="price--four bg-darkGreen text-white p-2 font-bold rounded-xl">25 %</p>
-                    <p class="price--five bg-darkGreen text-white p-2 font-bold rounded-xl">50 %</p>
+                    <button class="price--one bg-darkGreen text-white p-2 font-bold rounded-xl">5 %</button>
+                    <button class="price--two bg-darkGreen text-white p-2 font-bold rounded-xl">10 %</button>
+                    <button class="price--three bg-darkGreen text-white p-2 font-bold rounded-xl">15 %</button>
+                    <button class="price--four bg-darkGreen text-white p-2 font-bold rounded-xl">25 %</button>
+                    <button class="price--five bg-darkGreen text-white p-2 font-bold rounded-xl">50 %</button>
                     <p class="custom bg-grayishCyan text-darkCyan p-2 font-bold rounded-xl">Custom</p>
                 </div>
             </div>
             <div>
                 <p class="text-darkGreen mb-2">Number of people</p>
-                <input type="text" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-6 text-right font-bold text-10xl bg-[url('../images/icon-person.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700 lg:mb-0">
+                <input type="text" id="people" value="0" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-6 text-right font-bold text-10xl bg-[url('../images/icon-person.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700 lg:mb-0">
             </div>
         </div>
         <div class="bg-darkGreen pt-8 pb-6 px-4 rounded-xl lg:pb-0 relative">
@@ -36,15 +36,17 @@
                         <p class="text-white">Tip Amount</p>
                         <p class="text-cyanGray">/ person</p>
                     </div>
-                    <p class="mt-5 justify-self-center text-strongCyan text-4xl">$0.00</p>
+                    <p id="tipPerPerson"  class="mt-5 justify-self-center text-strongCyan text-4xl">$0.00</p>
                     <div class="grid grid-rows-2">
                         <p class="text-white">Total</p>
                         <p class="text-cyanGray">/ person</p>
                     </div>
-                    <p class="mt-5 justify-self-center text-strongCyan text-4xl">$0.00</p>
+                    <p id="total-per-person" class="mt-5 justify-self-center text-strongCyan text-4xl">$0.00</p>
                 </div>
                 <button class="text-center w-full mt-4 bg-strongCyan p-2 rounded-lg lg:absolute  bottom-0 right-0">RESET</button>
         </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
