@@ -14,3 +14,12 @@ for (i = 0; i < pricenumbers.length; i++) {
 // let tip = number/100 * bill;
 // alert(tip)
 // // document.querySelector('#tipPerPerson').innerHTML = '$'+ tip;
+
+let zero = '$0.00'
+
+document.querySelectorAll('button')[5].addEventListener('click', function(){
+      document.querySelector('#tip-per-person').innerHTML = zero;
+      document.querySelector('#total-per-person').innerHTML = zero;
+      document.getElementById("price").value = 0;
+      document.getElementById("people").value = 0;
+})
