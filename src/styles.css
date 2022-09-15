@@ -3,11 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-button:hover{
-    background-color: hsl(172, 67%, 45%);
-}
-
-.grid-discount{
+.grid-discount {
     display: grid;
     text-align: center;
     gap: 1rem;
