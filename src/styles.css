@@ -3,15 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+button:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
 .grid-discount{
     display: grid;
     text-align: center;
     gap: 1rem;
-    grid-template-areas: 
-
-    "price1 price2"
-    "price3 price4"
-    "price5 custom";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 
