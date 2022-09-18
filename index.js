@@ -30,6 +30,7 @@ document.querySelectorAll("button")[5].addEventListener("click", function () {
   document.querySelector("#total-per-person").innerHTML = zero;
   document.getElementById("price").value = 0;
   document.getElementById("people").value = 0;
+  document.getElementById("custom").value = "";
 });
 
 //Adding functionality to the enter key
