@@ -7,8 +7,15 @@
     display: grid;
     text-align: center;
     gap: 1rem;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 49%);
     grid-template-rows: repeat(3, 1fr);
+}
+@media screen and (min-width: 1024px){
+    .grid-discount {
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
 }
 
 
