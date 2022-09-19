@@ -5,7 +5,7 @@ for (i = 0; i < pricenumbers.length; i++) {
     let bill = document.getElementById("price").value;
     let invalidZero = "0.00";
     let numberOfPeople = document.getElementById("people").value;
-    let amountPerPerson = parseFloat(bill / numberOfPeople).toFixed(2);
+    let amountPerPerson = Number(bill / numberOfPeople);
     if (isNaN(amountPerPerson)) {
       alert("Please Enter a Valid Number");
       amountPerPerson = invalidZero;
@@ -13,7 +13,7 @@ for (i = 0; i < pricenumbers.length; i++) {
     document.querySelector("#total-per-person").innerHTML =
       "$" + amountPerPerson;
     let currentNumber = Number(this.innerHTML);
-    let tip = parseFloat((currentNumber / 100) * bill).toFixed(2);
+    let tip = (currentNumber / 100) * bill;
     document.querySelector("#tip-per-person").innerHTML = "$" + tip;
   });
 }
