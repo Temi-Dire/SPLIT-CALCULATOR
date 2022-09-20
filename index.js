@@ -28,8 +28,8 @@ let zero = "$0.00";
 document.querySelectorAll("button")[5].addEventListener("click", function () {
   document.querySelector("#tip-per-person").innerHTML = zero;
   document.querySelector("#total-per-person").innerHTML = zero;
-  document.getElementById("price").value = 0;
-  document.getElementById("people").value = 0;
+  document.getElementById("price").value = "";
+  document.getElementById("people").value = "";
   document.getElementById("custom").value = "";
 });
 
