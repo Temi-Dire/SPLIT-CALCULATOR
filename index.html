@@ -54,10 +54,10 @@
         <div>
             <div class="mb-4">
                 <p class="text-darkGreen mb-2">Bill</p>
-                <input type="text" id="price" value="" placeholder="0" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-4 text-right font-bold text-10xl bg-[url('../images/icon-dollar.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700 selection:bg-strongCyan">
+                <input type="number" id="price" value="" placeholder="0" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-4 text-right font-bold text-10xl bg-[url('../images/icon-dollar.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700 selection:bg-strongCyan">
                 <div class="mb-4">
                     <p class="text-darkGreen mb-2">Number of people</p>
-                    <input type="text" id="people" value="" placeholder="0" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-6 text-right font-bold text-10xl bg-[url('../images/icon-person.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700 lg:mb-0 selection:bg-strongCyan">
+                    <input type="number" id="people" value="" placeholder="0" class="text-base w-full p-2 outline-none bg-grayishCyan rounded-xl mb-6 text-right font-bold text-10xl bg-[url('../images/icon-person.svg')] bg-left bg-no-repeat caret-transparent focus:shadow-lg transition duration-700 lg:mb-0 selection:bg-strongCyan">
                 </div>
                 <p class="text-darkGreen mb-2">Select tip %</p>
                 <div class="grid-discount ">
@@ -84,7 +84,7 @@
                     </div>
                     <p id="total-per-person" class="mt-5 justify-self-center text-strongCyan text-4xl">$0.00</p>
                 </div>
-                <button id="reset" class="text-center w-full mt-4 bg-strongCyan p-2 rounded-lg lg:mt-20 hover:opacity-25 transition duration-300">RESET</button>
+                <button id="reset" class="text-center w-full  bg-strongCyan p-2 rounded-lg lg:mt-20 hover:opacity-25 transition duration-300">RESET</button>
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
